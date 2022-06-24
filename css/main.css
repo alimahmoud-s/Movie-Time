@@ -1,17 +1,29 @@
-#sideinfo{
-   width:15%;
+#sideinfo {
+  width: 18%;
+  position: absolute;
+  left: -15%;
 }
-#sidebar{
-    width: 20%;
-    z-index: 99;
-    height: 100vh;
-    background-color:  aqua;
+#sidebar {
+  width: 25%;
+  z-index: 99;
+  height: 100vh;
+  background-color: aqua;
 }
-#slidenvbtn{
-    top: 40% ;
-    left: 50%;
+#slidenvbtn {
+  top: 40%;
+  left: 50%;
 }
-#socialicon{
-bottom: 1%;
-left: 50%;
+#socialicon {
+  bottom: 1%;
+  left: 50%;
+}
+
+.layer{
+    background: rgba(255, 255, 255 ,0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    bottom: -100%;
+    display: none;
+   
 }
