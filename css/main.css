@@ -1,0 +1,17 @@
+#sideinfo{
+   width:15%;
+}
+#sidebar{
+    width: 20%;
+    z-index: 99;
+    height: 100vh;
+    background-color:  aqua;
+}
+#slidenvbtn{
+    top: 40% ;
+    left: 50%;
+}
+#socialicon{
+bottom: 1%;
+left: 50%;
+}
