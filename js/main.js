@@ -11,7 +11,7 @@ async function display(params) {
   console.log(moviesList);
   var movie = ``;
   for (let i = 0; i < moviesList.length; i++) {
-    movie += `<div id="movieboster" class="col-md-4 position-relative rounded my-1 px-1">
+    movie += `<div id="movieboster" class="col-md-4 position-relative rounded my-2 px-1">
               <div class="position-absolute  w-100 h-100">
                <div class="layer position-absolute text-center overflow-hidden  start-0">
                <h2 class=" fw-bolder mt-md-5 fs-5">${
