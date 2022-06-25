@@ -2,9 +2,9 @@ body {
   box-sizing: border-box;
 }
 #sideinfo {
-  width: 20% !important;
+  /* width: 20% !important; */
   position: absolute;
-  /* left: -17%; */
+  left: -21%;
   z-index: 33;
 }
 /* @media screen and (min-width: 480px) {
@@ -13,31 +13,29 @@ body {
   }
 } */
 #sidebar {
-  width: 20%;
+  /* width: 20%; */
   z-index: 9999 !important;
   height: 100vh;
   background-color: aqua;
+  width: 20%;
   
 }
 .logo
 {
     left: 10%;
 }
-#heddinNav{
-    display: none;
-}
 .slidenvbtn {
   top: 40%;
-  left: 50%;
+  left: 55%;
+  transform: translate(-50%);
 }
 #socialicon {
-  bottom: 1%;
+  bottom: 0;
   left: 50%;
 }
 
 .layer {
-  background: rgba(255, 255, 255, 0.7);
-  width: 100%;
+  background-color: rgba(0, 255, 255, 0.8);
   height: 100%;
   transition: 2s all;
   bottom: -100%;
@@ -52,3 +50,14 @@ body {
   bottom: 0%;
 }
 
+#color-change{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+.change-color{
+    background-color: rgba(218, 252, 252, 0.862);
+}
+.dark-color{
+  background-color: black;
+}

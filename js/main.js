@@ -11,7 +11,7 @@ async function display(params) {
   console.log(moviesList);
   var movie = ``;
   for (let i = 0; i < moviesList.length; i++) {
-    movie += `<div id="movieboster" class="col-md-4 position-relative rounded my-1 px-1">
+    movie += `<div id="movieboster" class="col-md-4 position-relative rounded my-2 px-1">
               <div class="position-absolute  w-100 h-100">
                <div class="layer position-absolute text-center overflow-hidden  start-0">
                <h2 class=" fw-bolder mt-md-5 fs-5">${
@@ -36,5 +36,16 @@ display();
 //           <div class="movieimg"><img src="image/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg" alt="movie img" class="img-fluid "></div>
 //         </div>`);
 $("#slidenvbtn").click(function (params) {
-  $("#heddinNav").toggle(500);
+  let currentwdth = $("#heddinNav").outerWidth();
+  if ($("#sideinfo").css("left") == "0px") {
+    $("#sideinfo").animate({ left: -currentwdth }, 500);
+  } else {
+    $("#sideinfo").animate({ left: "0px" }, 500);
+  }
+});
+
+
+
+$("#color-change").click(function (params) {
+  $(".change-color").toggleClass("dark-color");
 });
