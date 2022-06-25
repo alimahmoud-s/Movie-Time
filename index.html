@@ -10,92 +10,109 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body class="vh-100 bg-black">
-    <div id="sideinfo" class=" position-fixed vh-100 bg-black d-flex justify-content-between">
-      <div class="navlink mx-md-3 ms-sm-1 w-100 ">
-       
-         <ul class="navbar-nav mb-2 mb-lg-0 " >
-            <li class="nav-item">
-              <a class="nav-link text-decoration-none text-white-50 " >Now playing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white-50" >Popular</a>
-            </li>
-             <li class="nav-item">
-              <a class="nav-link text-white-50" >Top Rated</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white-50" >Trending</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white-50" >Upcoming</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white-50" >Contact Us</a>
-            </li>
-          </ul>
-           <div id="navfotr" class=" position-relative start-50  top-50 mb-1 translate-middle ms-md-2">
-          <a class="text-decoration-none"><i class="fa-brands fa-facebook-f text-white ms-1"></i></a>
-          <a class="text-decoration-none"><i class="fa-brands fa-twitter text-white ms-1"></i></a>
-          <a class="text-decoration-none"><i class="fa-solid fa-globe text-white ms-1"></i></a>
-          <div><p class="text-white-50">Copyright Â© 2019 All Rights Reserved.
-</p></div>
+    <div
+      id="sideinfo"
+      class="   position-fixed w-25 d-flex justify-content-between"
+    >
+      <div id="heddinNav" class="navlink bg-black  px-md-3 ms-sm-1 w-100 >
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-decoration-none text-white-50"
+              >Now playing</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white-50">Popular</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white-50">Top Rated</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white-50">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white-50">Upcoming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white-50">Contact Us</a>
+          </li>
+        </ul>
+        <div
+          id="navfotr"
+          class="position-relative start-50 top-50 mb-1 translate-middle ms-md-2"
+        >
+          <a class="text-decoration-none"
+            ><i class="fa-brands fa-facebook-f text-white ms-1"></i
+          ></a>
+          <a class="text-decoration-none"
+            ><i class="fa-brands fa-twitter text-white ms-1"></i
+          ></a>
+          <a class="text-decoration-none"
+            ><i class="fa-solid fa-globe text-white ms-1"></i
+          ></a>
+          <div>
+            <p class="text-white-50">Copyright Â© 2019 All Rights Reserved.</p>
+          </div>
         </div>
       </div>
+
+      <div id="sidebar" class="position-relative ">
+        <div class=" ms-md-1"><img src="image/logo.png" alt="" class="w-75 ms-lg-1 ms-xl-1 my-md-2 px-xl-1 navbar-brand" /></div>
+        <div  class="w-100 position-absolute translate-middle slidenvbtn ms-xl-2  ">
+         <button  id="slidenvbtn" class="bg-transparent  border-0"><i class="fa-solid fa-align-justify fa-2x w-100"></i></button>
+        </div>
+        <div
+          id="socialicon"
+          class="position-absolute translate-middle d-flex flex-column "
+        >
+          <i class="fa-solid fa-globe pb-2"></i>
+          <i class="fa-solid fa-share-nodes pt-1"></i>
+        </div>
+      </div>
+    </div>
+    <div class="container w-75 h-100 ">
+      <div id="postes" class="row">
+        <div class="col-md-12 ">
+          <div id="searchInputs " class="d-flex justify-content-center">
+            <input
+              type="text"
+              class="form-control mx-2 text-info bg-transparent border-0 border-bottom"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+            />
+            <input
+              type="text"
+              class="form-control text-info mx-2 bg-transparent border-0 border-bottom"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+            />
+          </div>
+        </div>
+        
+      </div>
+      <div class="row"><div id="contactUs" class="col-12">
+        <h3 class="text-white-50 text-center my-5">Contact Us </h3>
+      </div>
+      <div class=" col-md-6">
+           <input type="email" class="form-control mb-1 text-info bg-transparent border-0 border-bottom" placeholder="Enter Your Name">
+      </div>
+      <div class="col-md-6">
+           <input type="email" class="form-control mb-1 text-info bg-transparent border-0 border-bottom" placeholder="Enter Email">
+      </div>
+      <div class=" col-md-6">
+           <input type="email" class="form-control mb-1  text-info bg-transparent border-0 border-bottom" placeholder="Enter Phone">
+      </div><div class=" col-md-6">
+           <input type="email" class="form-control mb-1  text-info bg-transparent border-0 border-bottom" placeholder="Enter Your Age">
+      </div><div class=" col-md-6">
+           <input type="email" class="form-control mb-1  text-info bg-transparent border-0 border-bottom" placeholder="Enter Your Password">
+      </div><div class=" col-md-6">
+           <input type="email" class="form-control mb-1  text-info bg-transparent border-0 border-bottom" placeholder="Enter Your rePassword">
+      </div>
+      <button id="subtn" type="submit" class="m-3 w-25 btn btn-outline-info"> Submit</button>
+    </div>
       
-    <div id="sidebar" class=" position-relative ">
-      <img src="image/logo.png" alt="" class=" w-75 ms-1 my-md-2 px-md-1" />
-     <div id="slidenvbtn" class="w-50 position-absolute  translate-middle"><i  class="fa-solid fa-align-justify fa-2x w-100 "></i></div> 
-     <div id="socialicon" class=" position-absolute translate-middle d-flex flex-column ">
-        <i class="fa-solid fa-globe  pb-2" ></i>
-        <i class="fa-solid fa-share-nodes  pt-1 "></i>
-     </div>
     </div>
-    </div>
-    <div class="container w-75">
-      <div class="row">
-        <div class="col-md-12 mt-5">
-          <header>
-            <div id="searchInputs " class="d-flex justify-content-center">
-              <input
-                type="text"
-                class="form-control mx-2 bg-transparent border-0 border-bottom"
-                id="exampleFormControlInput1"
-                placeholder="name@example.com"
-              />
-              <input
-                type="text"
-                class="form-control mx-2 bg-transparent border-0 border-bottom"
-                id="exampleFormControlInput1"
-                placeholder="name@example.com"
-              />
-            </div>
-          </header>
-        </div>
-      </div>
-      <div class="row">
-        <div id="movieboster" class="col-md-4 position-relative overflow-hidden my-1">
-          <div class="layer position-absolute  start-0"></div>
-          <div class="movieimg"><img src="image/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg" alt="movie img" class="img-fluid "></div>
-
-        </div>
-         <div id="movieboster" class="col-md-4 position-relative overflow-hidden my-1">
-          <div class="layer position-absolute  start-0"></div>
-          <div class="movieimg"><img src="image/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg" alt="movie img" class="img-fluid "></div>
-
-        </div>
-         <div id="movieboster" class="col-md-4 position-relative overflow-hidden my-1">
-          <div class="layer position-absolute  start-0"></div>
-          <div class="movieimg"><img src="image/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg" alt="movie img" class="img-fluid "></div>
-
-        </div>
-         <div id="movieboster" class="col-md-4 position-relative overflow-hidden my-1">
-          <div class="layer position-absolute  start-0"></div>
-          <div class="movieimg"><img src="image/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg" alt="movie img" class="img-fluid "></div>
-
-        </div>
-      </div>
-    </div>
-
+    
     <!--JS FILES-->
     <script src="js/all.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
