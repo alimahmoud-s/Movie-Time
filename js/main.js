@@ -144,7 +144,7 @@ $('#name').keyup(function (params) {
   }
 })
 $("#email").keyup(function (params) {
-  if ($(this).value == /^A-Z[a-z]{2-8}/) {
+  if ($(this).value == /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/) {
     $("#aemail").addClass("d-none");
   } else {
     $("#aemail").removeClass("d-none");
@@ -152,7 +152,7 @@ $("#email").keyup(function (params) {
   }
 });
 $("#Phone").keyup(function (params) {
-  if ($(this).value == /^A-Z[a-z]{2-8}/) {
+  if ($(this).value == /[011,012,010,015][0-9]{10}/) {
     $("#palert").addClass("d-none");
   } else {
     $("#palert").removeClass("d-none");
@@ -160,7 +160,7 @@ $("#Phone").keyup(function (params) {
   }
 });
 $("#age").keyup(function (params) {
-  if ($(this).value == /^A-Z[a-z]{2-8}/) {
+  if ($(this).value == /[0-9]{2}/) {
     $("#aage").addClass("d-none");
   } else {
     $("#aage").removeClass("d-none");
@@ -168,11 +168,14 @@ $("#age").keyup(function (params) {
   }
 });
 $("#password").keyup(function (params) {
-  if ($(this).value == /^A-Z[a-z]{2-8}/) {
+  if ($(this).value == /[a-zA-Z 0-9 @ #!$%]{8,32}/) {
     $("#apassword").addClass("d-none");
   } else {
     $("#apassword").removeClass("d-none");
     console.log(this.value);
   }
 });
+
+
+
 resetForm()
